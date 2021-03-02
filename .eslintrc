@@ -1,0 +1,18 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["prettier"],
+  "extends": [
+    "standard",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "no-undef": 0,
+    "no-use-before-define": 0,
+    "no-unused-vars": 1,
+    "@typescript-eslint/consistent-type-assertions": 0,
+    "camelcase": 0
+  }
+}
