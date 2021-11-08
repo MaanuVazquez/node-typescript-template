@@ -1,18 +1,41 @@
 {
+  "root": true,
   "parser": "@typescript-eslint/parser",
-  "plugins": ["prettier"],
+  "plugins": ["@typescript-eslint"],
   "extends": [
-    "standard",
-    "plugin:@typescript-eslint/eslint-recommended",
+    "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint",
-    "plugin:prettier/recommended"
+    "prettier",
+    "plugin:import/recommended",
+    "plugin:import/typescript"
   ],
+
   "rules": {
     "no-undef": 0,
     "no-use-before-define": 0,
-    "no-unused-vars": 1,
+    "no-unused-vars": 0,
+    "@typescript-eslint/no-explicit-any": 2,
     "@typescript-eslint/consistent-type-assertions": 0,
-    "camelcase": 0
+    "@typescript-eslint/no-non-null-assertion": 2,
+    "@typescript-eslint/explicit-function-return-type": ["error"],
+    "@typescript-eslint/ban-ts-comment": 0,
+    "camelcase": 0,
+    "import/no-cycle": [2, { "ignoreExternal": true }],
+    "import/order": [
+      "error",
+      {
+        "groups": [["builtin", "external"], "internal", "parent", ["sibling", "index"]],
+        "newlines-between": "always-and-inside-groups"
+      }
+    ],
+    "arrow-body-style": ["error", "as-needed", { "requireReturnForObjectLiteral": true }]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".ts", ".tsx"],
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
   }
 }

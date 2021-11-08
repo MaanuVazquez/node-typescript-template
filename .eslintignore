@@ -1,5 +1,6 @@
-lib
+@types
+dist
+docs
+logger
 node_modules
-*.js
-bin
-scripts
+tsconfig-paths-bootstrap.js

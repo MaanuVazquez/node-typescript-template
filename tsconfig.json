@@ -1,7 +1,6 @@
 {
+  "extends": "@tsconfig/node14/tsconfig.json",
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
     "outDir": "./dist",
     "rootDir": "./src",
     "removeComments": true,
@@ -9,12 +8,11 @@
     "noImplicitAny": true,
     "noImplicitThis": true,
     "alwaysStrict": true,
-    "moduleResolution": "node",
-    "baseUrl": "./src",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
     "typeRoots": ["./node_modules/@types", "./@types"],
-    "paths": {},
+    "baseUrl": ".",
+    "paths": {
+      "*": ["src/*", "*"]
+    },
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   }
