@@ -5,28 +5,25 @@
   "repository": "git@github.com:MaanuVazquez/typescript-template.git",
   "author": "Emmanuel Vazquez <maanuvazquez@gmail.com>",
   "license": "MIT",
-  "engines": {
-    "node": ">=14.17.0 <15"
-  },
   "dependencies": {
-    "@types/dotenv": "^8.2.0",
-    "@types/node": "^14.15.5",
     "dotenv": "^10.0.0",
-    "tsconfig-paths": "^3.11.0",
-    "typescript": "^4.4.4"
+    "tsconfig-paths": "^3.14.1"
   },
   "devDependencies": {
-    "@tsconfig/node14": "^1.0.1",
-    "@typescript-eslint/eslint-plugin": "^5.3.1",
-    "@typescript-eslint/parser": "^5.3.1",
-    "eslint": "^8.2.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.2",
+    "@tsconfig/node16": "^1.0.3",
+    "@types/node": "^16.11.59",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
+    "eslint": "^8.23.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "husky": "^7.0.4",
-    "nodemon": "^2.0.14",
-    "prettier": "^2.4.1",
-    "ts-node": "^10.4.0"
+    "nodemon": "^2.0.20",
+    "prettier": "2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.3"
   },
   "scripts": {
     "build": "tsc",

@@ -1,6 +1,5 @@
 @types
 dist
 docs
-logger
 node_modules
 tsconfig-paths-bootstrap.js
