@@ -3,5 +3,6 @@
 .DS_Store
 .env
 /.cache
-/public/build
-/build
+/dist
+.env.example
+nodemon.json
