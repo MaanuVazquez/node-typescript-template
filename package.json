@@ -1,8 +1,8 @@
 {
-  "name": "typescript-template",
+  "name": "node-typescript-template",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:MaanuVazquez/typescript-template.git",
+  "repository": "git@github.com:MaanuVazquez/node-typescript-template.git",
   "author": "Emmanuel Vazquez <maanuvazquez@gmail.com>",
   "license": "MIT",
   "dependencies": {
