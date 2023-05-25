@@ -7,5 +7,6 @@
     "paths": {
       "~/*": ["src/*", "*"]
     }
-  }
+  },
+  "exclude": ["./tsconfig-paths-bootstrap.js", "dist", "node_modules"]
 }

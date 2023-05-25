@@ -1,12 +1,13 @@
 # Typescript template
-Yet another Typescript template for NodeJS.
 
-It includes:
+This is a basic bootstrap template for NodeJS projects using Typescript.
 
-- Typescript of course.
-- Linter configured (Eslint + Prettier).
-- TSConfig ready por building.
-- Git hooks with husky.
-- Dockerfile for easy dockerize.
+Includes:
+- NodeJS 18 (LTS).
+- Typescript ready.
+- Linting.
+- Alias import (~).
+- Git hooks with Husky.
+- Zod for validation (Includes out-of-the-box validation for env).
+- Basic dockerfile.
 - Dotenv.
-- 

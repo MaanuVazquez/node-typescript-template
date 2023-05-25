@@ -3,3 +3,6 @@ dist
 docs
 node_modules
 tsconfig-paths-bootstrap.js
+.swcrc
+.prettierrc.js
+.eslintrc

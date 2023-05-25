@@ -1,4 +1,4 @@
-import { envVars } from './env'
+import { envVars } from '~/env'
 
 function main() {
   console.log(envVars.NODE_ENV, envVars.PORT)
