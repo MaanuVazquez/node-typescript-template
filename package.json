@@ -1,6 +1,6 @@
 {
   "name": "node-typescript-template",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "index.js",
   "repository": "git@github.com:MaanuVazquez/node-typescript-template.git",
   "author": "Emmanuel Vazquez <maanuvazquez@gmail.com>",
@@ -10,28 +10,29 @@
     "tsconfig-paths": "^3.14.1"
   },
   "devDependencies": {
-    "@tsconfig/node16": "^1.0.3",
-    "@types/node": "^16.11.59",
-    "@typescript-eslint/eslint-plugin": "^5.38.0",
-    "@typescript-eslint/parser": "^5.38.0",
-    "eslint": "^8.23.1",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^4.2.1",
+    "@maanu-devtools/eslint-config-node": "^0.1.0",
+    "@maanu-devtools/prettier-config": "^0.1.0",
+    "@maanu-devtools/tsconfig": "^0.1.2",
+    "@tsconfig/node18": "^2.0.1",
+    "@types/node": "^18.16.14",
+    "eslint": "^8.41.0",
     "husky": "^7.0.4",
     "nodemon": "^2.0.20",
-    "prettier": "2.7.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.8.8",
     "ts-node": "^10.9.1",
-    "typescript": "^4.8.3"
+    "typescript": "^5.0.4"
   },
   "scripts": {
     "build": "tsc",
     "dev": "nodemon --config nodemon.json src/index.ts",
     "start": "node -r dotenv/config -r ./tsconfig-paths-bootstrap.js ./dist/index.js",
-    "lint": "yarn lint-eslint && yarn lint-typescript",
-    "lint-eslint": "eslint --max-warnings 0 --ext ts ./src",
-    "lint-typescript": "tsc --noEmit",
+    "lint:eslint": "eslint --max-warnings 0 --ext ts ./src",
+    "lint:typescript": "tsc --noEmit",
+    "lint": "run-p lint:*",
     "prepare": "husky install"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
