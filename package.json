@@ -7,7 +7,8 @@
   "license": "MIT",
   "dependencies": {
     "dotenv": "^10.0.0",
-    "tsconfig-paths": "^3.14.1"
+    "tsconfig-paths": "^3.14.1",
+    "zod": "^3.21.4"
   },
   "devDependencies": {
     "@maanu-devtools/eslint-config-node": "^0.1.0",
